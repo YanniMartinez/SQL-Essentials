@@ -29,7 +29,7 @@ create table Entrada(
     usuario_id INT NOT NULL,
     categoria_id INT NOT NULL,
     titulo VARCHAR(200) NOT NULL,
-    descripcion_text VARCHAR(300),
+    descripcion TEXT,
     fecha DATE  NOT NULL,
     CONSTRAINT PK_id_entrada PRIMARY KEY (id), /* Llave primaria */
     CONSTRAINT FK_entrada_usuario FOREIGN KEY(usuario_id) REFERENCES Usuario(id), /* LLave foranea */
@@ -38,7 +38,7 @@ create table Entrada(
 
 /* 
     Constraints usando eliminación en cascada y actualización en cascada:
-    
+
     CONSTRAINT FK_entrada_usuario FOREIGN KEY(usuario_id) REFERENCES Usuario(id) ON DELETE CASCADE ON UPDATE CASCADE, 
     CONSTRAINT FK_entrada_categoria FOREIGN KEY(categoria_id) REFERENCES Categoria(id) ON DELETE CASCADE ON UPDATE CASCADE
  */

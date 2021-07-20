@@ -7,5 +7,8 @@ Modifica Tabla nombreDeTabla atributoAModificar nuevoNombreDeatributo tipoDeDato
 */
 ALTER TABLE USUARIO_RENAME CHANGE apellidos apellido VARCHAR(100) NULL; 
 
-/*Modificar la columna sin cambiar el nombre*/
+/*Modificar la columna SIN cambiar el nombre*/
 ALTER TABLE USUARIO_RENAME MODIFY apellido CHAR(50) NOT NULL;
+
+/* Añadir nueva columna */
+ALTER TABLE USUARIO_RENAME ADD website VARCHAR(50) NULL;

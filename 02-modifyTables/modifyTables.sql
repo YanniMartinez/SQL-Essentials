@@ -19,3 +19,6 @@ ALTER TABLE USUARIO_RENAME ADD website VARCHAR(50) NULL;
     repetir.
  */
 ALTER TABLE USUARIO_RENAME ADD CONSTRAINT uq_email UNIQUE(email); 
+
+/* Borrando una columna, en este caso eliminamos el website */
+ALTER TABLE USUARIO_RENAME DROP website;

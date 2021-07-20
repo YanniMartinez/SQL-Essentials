@@ -12,3 +12,10 @@ ALTER TABLE USUARIO_RENAME MODIFY apellido CHAR(50) NOT NULL;
 
 /* Añadir nueva columna */
 ALTER TABLE USUARIO_RENAME ADD website VARCHAR(50) NULL;
+
+/* Añadiendo una restricción a una columna
+    UQ hace referencia a Unique, significa que es un campo unico
+    La siguiente sentencia hace referencia a que serán usuarios unicos, es decir, no se pueden
+    repetir.
+ */
+ALTER TABLE USUARIO_RENAME ADD CONSTRAINT uq_email UNIQUE(email); 

@@ -41,4 +41,8 @@ create table Entrada(
 
     CONSTRAINT FK_entrada_usuario FOREIGN KEY(usuario_id) REFERENCES Usuario(id) ON DELETE CASCADE ON UPDATE CASCADE, 
     CONSTRAINT FK_entrada_categoria FOREIGN KEY(categoria_id) REFERENCES Categoria(id) ON DELETE CASCADE ON UPDATE CASCADE
- */
+    
+    Si se hizo lo de hace 2 commits puede llegar a ser modificado de la siguiente manera
+    ALTER TABLE Entrada MODIFY descripcion_text TEXT;
+    ALTER TABLE Entrada CHANGE descripcion_text descripcion TEXT NULL; 
+*/

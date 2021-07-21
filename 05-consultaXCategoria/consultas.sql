@@ -5,12 +5,12 @@ SELECT COUNT(titulo), categoria_id FROM entrada
 SELECT COUNT(titulo), categoria_id FROM entrada GROUP BY categoria_id;
 
 /* AS significa un alias temporal mientras dura la consulta */
-SELECT COUNT(titulo) AS 'Número de entradas', categoria_id FROM entrada GROUP BY categoria_id;
+SELECT COUNT(titulo) AS 'Número de entradas Yann Martinez', categoria_id FROM entrada GROUP BY categoria_id;
 
 /*En group by no podemos usar el WHERE, pero si el Having, en este contexto sustituye al 
 Where */
 /* Consulta agrupada con condiciones */
-SELECT COUNT(titulo) AS 'Número de entradas', categoria_id 
+SELECT COUNT(titulo) AS 'Número de entradas Yann Martinez', categoria_id 
 FROM entrada GROUP BY categoria_id
 HAVING COUNT(titulo) >= 4;
 /* En este ejemplo nos devuelve las entradas que tengan un contador mayor o igual a 4.
@@ -20,7 +20,7 @@ cuando el número de entradas sea mayor o igual a 4
  */
 
 /* Sacando promedios de los ID. AVG significa Averange = promedio */
-SELECT AVG(id) AS 'Promedio id' FROM entrada;
+SELECT AVG(id) AS 'Promedio id Yann Martinez' FROM entrada;
 
 /* Obtención de un número máximo */
 SELECT MAX(id) AS 'Máximo id' FROM entrada;

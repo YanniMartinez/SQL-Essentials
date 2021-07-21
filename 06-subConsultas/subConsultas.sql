@@ -1,5 +1,4 @@
-/* Subconsultas
-    Son consultas que se ejecutan dentro de otras consultas
+/* Subconsultas --> Son consultas que se ejecutan dentro de otras consultas
  */
 
 /* Consulta para saber que usuarios tienen publicaciones */

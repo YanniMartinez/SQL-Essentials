@@ -19,4 +19,11 @@ Trae los titulos y cuentalos y la categoria_id de la tabla entradas agrupadas po
 cuando el número de entradas sea mayor o igual a 4
  */
 
- 
+/* Sacando promedios de los ID. AVG significa Averange = promedio */
+SELECT AVG(id) AS 'Promedio id' FROM entrada;
+
+/* Obtención de un número máximo */
+SELECT MAX(id) AS 'Máximo id' FROM entrada;
+
+/* Suma de elementos númericos */
+SELECT SUM(id) AS 'Suma de ids' FROM entrada;

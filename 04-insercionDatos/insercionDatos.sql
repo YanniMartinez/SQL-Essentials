@@ -1,3 +1,10 @@
+/* Usuarios: */
+INSERT INTO usuarios VALUES(null, 'Víctor', 'Apellidos', 'victor@victor.com', '1234', '2019-05-01');
+INSERT INTO usuarios VALUES(null, 'Antonio', 'Martinez', 'antonio@antonio.com', '1234', '2019-08-05');
+INSERT INTO usuarios VALUES(null, 'Paco', 'Lopez', 'paco@paco.com', '1234', '2020-05-01');
+
+
+/* Mas usuarios */
 insert into usuarios values(null, 'Carlos Eduardo', 'Jesus Leon', 'carlos@jesus.com','1234','2021-07-20');
 insert into usuarios values(null, 'Joaqui', 'Perez Hernandez', 'joaqui@perez.com','12345','2021-07-20');
 insert into usuarios values(null, 'Diana', 'Carrillo Guzman', 'diana@carrillo.com','qwerty','2021-07-20');

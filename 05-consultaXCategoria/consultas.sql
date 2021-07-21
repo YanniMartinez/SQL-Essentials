@@ -30,3 +30,6 @@ SELECT MIN(id) AS 'Mínimo id' FROM entrada;
 
 /* Suma de elementos númericos */
 SELECT SUM(id) AS 'Suma de ids' FROM entrada;
+
+/* Promedio con uso de Where. Obtiene el promedio del id de las entradas cuya categoria_id=1 */
+SELECT AVG(id) AS 'Promedio id' FROM entrada WHERE categoria_id;

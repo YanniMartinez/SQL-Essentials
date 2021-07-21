@@ -11,3 +11,11 @@ SELECT e.id, e.titulo, u.nombre, c.nombre
 FROM Entrada e
 INNER JOIN Usuario u  ON e.usuario_id = u.id
 INNER JOIN categoria c ON e.categoria_id = c.id;
+
+/* Obtener el número de entradas de categorias */
+SELECT e.nombre, COUNT(e.id) FROM categoria c
+INNER JOIN entrada e ON e.categoria_id = c.id
+GROUP BY e.categoria_id;
+
+/* https://www.w3schools.com/mysql/mysql_join.asp
+ */

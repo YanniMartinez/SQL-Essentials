@@ -25,5 +25,8 @@ SELECT AVG(id) AS 'Promedio id' FROM entrada;
 /* Obtención de un número máximo */
 SELECT MAX(id) AS 'Máximo id' FROM entrada;
 
+/* Obtención de un número mínimo */
+SELECT MIN(id) AS 'Mínimo id' FROM entrada;
+
 /* Suma de elementos númericos */
 SELECT SUM(id) AS 'Suma de ids' FROM entrada;

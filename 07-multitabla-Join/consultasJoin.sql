@@ -17,5 +17,10 @@ SELECT e.nombre, COUNT(e.id) FROM categoria c
 INNER JOIN entrada e ON e.categoria_id = c.id
 GROUP BY e.categoria_id;
 
+/* Obtener el número de entradas de categorias con LEFT JOIN */
+SELECT e.nombre, COUNT(e.id) FROM categoria c
+LEFT JOIN entrada e ON e.categoria_id = c.id
+GROUP BY e.categoria_id;
+
 /* https://www.w3schools.com/mysql/mysql_join.asp
  */
